@@ -33,11 +33,12 @@ public class JogoSimples {
                     if (confirmar.equals("sim")) {
                         System.out.println("Entrando no modo hardcore...");
                         tabuleiro.exibirTabuleiroH();
+                        navios.exibirMenu();
                         return; // Encerra o programa
                     } else {
                         System.out.println("Continuando No jogo normal...");
                         tabuleiro.exibirTabuleiroN();
-                        navios.navios();
+                        navios.exibirMenu();
                     }
                     return;
                 case 2:
