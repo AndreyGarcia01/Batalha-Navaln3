@@ -1,12 +1,14 @@
 package TelaInicial;
 
 import navios.navios;
+import navios.naviosH;
 import tabuleiro.tabuleiro;
+import tabuleiro.tabuleiroH;
 
 import java.util.Scanner;
 
 public class JogoSimples {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
         Scanner scanner = new Scanner(System.in);
 
         int opcaoEscolhida;
@@ -32,8 +34,8 @@ public class JogoSimples {
 
                     if (confirmar.equals("sim")) {
                         System.out.println("Entrando no modo hardcore...");
-                        tabuleiro.exibirTabuleiroH();
-                        navios.exibirMenu();
+                        tabuleiroH.exibirTabuleiroH();
+                        naviosH.exibirMenuH();
                         return; // Encerra o programa
                     } else {
                         System.out.println("Continuando No jogo normal...");

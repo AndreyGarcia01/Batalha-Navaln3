@@ -36,8 +36,8 @@ public class navios extends TelaInicial.JogoSimples {
                     } else {
                         System.out.println(
                                 "\n<----------------------------------------------------------------------------> \n" +
-                                        "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
-                                        "<----------------------------------------------------------------------------> \n");
+                                "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
+                                "<----------------------------------------------------------------------------> \n");
                         tabuleiro.exibirTabuleiroN();
                     }
                     break;
@@ -49,8 +49,8 @@ public class navios extends TelaInicial.JogoSimples {
                     } else {
                         System.out.println(
                                 "\n<----------------------------------------------------------------------------> \n" +
-                                        "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
-                                        "<----------------------------------------------------------------------------> \n");
+                                "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
+                                "<----------------------------------------------------------------------------> \n");
                     }
                     break;
                 case 3:
@@ -61,8 +61,8 @@ public class navios extends TelaInicial.JogoSimples {
                     } else {
                         System.out.println(
                                 "\n<----------------------------------------------------------------------------> \n" +
-                                        "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
-                                        "<----------------------------------------------------------------------------> \n");
+                                "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
+                                "<----------------------------------------------------------------------------> \n");
                     }
                     break;
                 case 4:
@@ -74,22 +74,22 @@ public class navios extends TelaInicial.JogoSimples {
                     } else {
                         System.out.println(
                                 "\n<----------------------------------------------------------------------------> \n" +
-                                        "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
-                                        "<----------------------------------------------------------------------------> \n");
+                                "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
+                                "<----------------------------------------------------------------------------> \n");
 
                     }
                     break;
                 case 0:
                     System.out.println(
                             "\n<---------------------------------------> \n" +
-                                    "O capitão escolheu a Derrota, Patético!!! \n" +
-                                    "<---------------------------------------> \n");
+                            "O capitão escolheu a Derrota, Patético!!! \n" +
+                            "<---------------------------------------> \n");
                     break;
                 default:
                     System.out.println(
                             "<---------------------------> \n" +
-                                    "Esse comando Não Existe Capitão!" +
-                                    "<---------------------------> \n");
+                            "Esse comando Não Existe Capitão!" +
+                            "<---------------------------> \n");
             }
         } while (opcao != 9);
 

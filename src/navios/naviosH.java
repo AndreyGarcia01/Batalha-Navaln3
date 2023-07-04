@@ -4,7 +4,7 @@ import tabuleiro.tabuleiro;
 
 import java.util.Scanner;
 
-public class navios extends TelaInicial.JogoSimples {
+public class naviosH extends TelaInicial.JogoSimples {
 
     private static boolean primeiroCapitaoEscolhido = false;
     private static boolean segundoCapitaoEscolhido = false;
@@ -12,7 +12,7 @@ public class navios extends TelaInicial.JogoSimples {
     private static boolean ultimaEmbarcacaoEscolhida = false;
 
 
-    public static void exibirMenu() {
+    public static void exibirMenuH() {
         Scanner scanner = new Scanner(System.in);
         int opcao;
 
@@ -30,22 +30,22 @@ public class navios extends TelaInicial.JogoSimples {
             switch (opcao) {
                 case 1:
                     if (!primeiroCapitaoEscolhido) {
-                        System.out.println("Porta-aviões Escolhido");
+                        System.out.println("\nPorta-aviões Escolhido!\n");
                         primeiroCapitaoEscolhido = true;
-                        tabuleiro.exibirTabuleiroN();
+                        tabuleiro.exibirTabuleiroH();
                     } else {
                         System.out.println(
                                 "\n<----------------------------------------------------------------------------> \n" +
                                         "Atente-se que somos uma frota pequena e não temos mais do que 1 de cada barco! \n" +
                                         "<----------------------------------------------------------------------------> \n");
-                        tabuleiro.exibirTabuleiroN();
+                        tabuleiro.exibirTabuleiroH();
                     }
                     break;
                 case 2:
                     if (!segundoCapitaoEscolhido) {
-                        System.out.println("Navio-Tanque Escolhido!");
+                        System.out.println("\nNavio-Tanque Escolhido!\n");
                         segundoCapitaoEscolhido = true;
-                        tabuleiro.exibirTabuleiroN();
+                        tabuleiro.exibirTabuleiroH();
                     } else {
                         System.out.println(
                                 "\n<----------------------------------------------------------------------------> \n" +
@@ -55,9 +55,9 @@ public class navios extends TelaInicial.JogoSimples {
                     break;
                 case 3:
                     if (!terceiroCapitaoEscolhido) {
-                        System.out.println("Contra-torpedeiros escolhido!");
+                        System.out.println("\nContra-torpedeiros escolhido!\n");
                         terceiroCapitaoEscolhido = true;
-                        tabuleiro.exibirTabuleiroN();
+                        tabuleiro.exibirTabuleiroH();
                     } else {
                         System.out.println(
                                 "\n<----------------------------------------------------------------------------> \n" +
@@ -67,9 +67,9 @@ public class navios extends TelaInicial.JogoSimples {
                     break;
                 case 4:
                     if (!ultimaEmbarcacaoEscolhida) {
-                        System.out.println("Submarino Escolhido!");
+                        System.out.println("\nSubmarino Escolhido!\n");
                         ultimaEmbarcacaoEscolhida = true;
-                        tabuleiro.exibirTabuleiroN();
+                        tabuleiro.exibirTabuleiroH();
                         break;
                     } else {
                         System.out.println(
