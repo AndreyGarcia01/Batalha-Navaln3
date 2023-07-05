@@ -37,9 +37,9 @@ public class JogoSimples {
                     } else {
                         System.out.println("Continuando No jogo normal...");
                         tabuleiro.exibirTabuleiroN();
-                        navios.mostrarMenu();
+                        navios.navios();
                     }
-                    break;
+                    return;
                 case 2:
                     System.out.println(
                             "<------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->" +
@@ -66,12 +66,7 @@ public class JogoSimples {
                         System.out.println("Opção inválida!");
                     }
                     break;
-                default:
-                    System.out.println(
-                            "<----------------------------------------------> \n"+
-                            "Até um pirata de um Olho Lê melhor que você!!! \n" +
-                            "Leia com atenção e Escolha de Novo Marujo!!! \n"+
-                            "<---------------------------------------------->");
+
             }
         } while (opcaoEscolhida != 8);
 
