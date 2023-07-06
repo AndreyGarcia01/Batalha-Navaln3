@@ -1,12 +1,14 @@
 package TelaInicial;
 
 import navios.navios;
+import navios.naviosH;
 import tabuleiro.tabuleiro;
+import tabuleiro.tabuleiroH;
 
 import java.util.Scanner;
 
 public class JogoSimples {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
         Scanner scanner = new Scanner(System.in);
 
         int opcaoEscolhida;
@@ -32,18 +34,19 @@ public class JogoSimples {
 
                     if (confirmar.equals("sim")) {
                         System.out.println("Entrando no modo hardcore...");
-                        tabuleiro.exibirTabuleiroH();
+                        tabuleiroH.exibirTabuleiroH();
+                        naviosH.exibirMenuH();
                         return; // Encerra o programa
                     } else {
                         System.out.println("Continuando No jogo normal...");
                         tabuleiro.exibirTabuleiroN();
-                        navios.navios();
+                        navios.exibirMenu();
                     }
                     return;
                 case 2:
                     System.out.println(
                             "<------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->" +
-                            "\nRegras do jogo: \n Seu objectivo é simples apenas derrube todos os barcos do Capitão Inimigo (ARRRGG!!), \n Ganha o melhor Capitão que conseguir derrubar toda a frota naval inimiga, \n Espero que tenha entendido, e Boa Sorte Na Batalha!!!." +
+                            "\nRegras do jogo: \n Seu objetivo é simples apenas derrube todos os barcos do Capitão Inimigo (ARRRGG!!), \n Ganha o melhor Capitão que conseguir derrubar toda a frota naval inimiga, \n Espero que tenha entendido, e Boa Sorte Na Batalha!!!." +
                             "\n<-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> \n");
                     break;
                 case 3:

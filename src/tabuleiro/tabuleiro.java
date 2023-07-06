@@ -22,7 +22,5 @@ public class tabuleiro extends TelaInicial.JogoSimples {
         }
     }
 
-    public static void exibirTabuleiroH() {
-    }
 }
 
