@@ -1,15 +1,16 @@
 package navios;
 
+import TelaInicial.BatalhaNaval;
 import tabuleiro.tabuleiroH;
 
 import java.util.Scanner;
 
-public class naviosH extends TelaInicial.JogoSimples {
+public class naviosH extends BatalhaNaval {
 
-    private static boolean primeiroCapitaoEscolhido = false;
-    private static boolean segundoCapitaoEscolhido = false;
-    private static boolean terceiroCapitaoEscolhido = false;
-    private static boolean ultimaEmbarcacaoEscolhida = false;
+    private static boolean primeiroNavioEscolhido = false;
+    private static boolean segundoNavioEscolhido = false;
+    private static boolean terceiroNavioEscolhido = false;
+    private static boolean ultimoNavioEscolhida = false;
 
 
     public static void exibirMenuH() {
@@ -29,9 +30,9 @@ public class naviosH extends TelaInicial.JogoSimples {
 
             switch (opcao) {
                 case 1:
-                    if (!primeiroCapitaoEscolhido) {
+                    if (!primeiroNavioEscolhido) {
                         System.out.println("\nPorta-aviões Escolhido!\n");
-                        primeiroCapitaoEscolhido = true;
+                        primeiroNavioEscolhido = true;
                         tabuleiroH.exibirTabuleiroH();
                     } else {
                         System.out.println(
@@ -42,9 +43,9 @@ public class naviosH extends TelaInicial.JogoSimples {
                     }
                     break;
                 case 2:
-                    if (!segundoCapitaoEscolhido) {
+                    if (!segundoNavioEscolhido) {
                         System.out.println("\nNavio-Tanque Escolhido!\n");
-                        segundoCapitaoEscolhido = true;
+                        segundoNavioEscolhido = true;
                         tabuleiroH.exibirTabuleiroH();
                     } else {
                         System.out.println(
@@ -54,9 +55,9 @@ public class naviosH extends TelaInicial.JogoSimples {
                     }
                     break;
                 case 3:
-                    if (!terceiroCapitaoEscolhido) {
+                    if (!terceiroNavioEscolhido) {
                         System.out.println("\nContra-torpedeiros escolhido!\n");
-                        terceiroCapitaoEscolhido = true;
+                        terceiroNavioEscolhido = true;
                         tabuleiroH.exibirTabuleiroH();
                     } else {
                         System.out.println(
@@ -66,9 +67,9 @@ public class naviosH extends TelaInicial.JogoSimples {
                     }
                     break;
                 case 4:
-                    if (!ultimaEmbarcacaoEscolhida) {
+                    if (!ultimoNavioEscolhida) {
                         System.out.println("\nSubmarino Escolhido!\n");
-                        ultimaEmbarcacaoEscolhida = true;
+                        ultimoNavioEscolhida = true;
                         tabuleiroH.exibirTabuleiroH();
                         break;
                     } else {

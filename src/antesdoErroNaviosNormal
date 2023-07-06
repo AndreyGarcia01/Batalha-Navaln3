@@ -4,7 +4,7 @@ import tabuleiro.tabuleiro;
 
 import java.util.Scanner;
 
-public class navios extends TelaInicial.JogoSimples {
+public class navios extends TelaInicial.BatalhaNaval {
 
     private static boolean primeiroCapitaoEscolhido = false;
     private static boolean segundoCapitaoEscolhido = false;

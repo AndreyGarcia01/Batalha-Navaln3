@@ -1,6 +1,8 @@
 package tabuleiro;
 
-public class tabuleiro extends TelaInicial.JogoSimples {
+import TelaInicial.BatalhaNaval;
+
+public class tabuleiro extends BatalhaNaval {
     public static void exibirTabuleiroN() {
         int tamanhoTabuleiro = 10;
 

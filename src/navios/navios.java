@@ -1,10 +1,11 @@
 package navios;
 
+import TelaInicial.BatalhaNaval;
 import tabuleiro.tabuleiro;
 
 import java.util.Scanner;
 
-public class navios extends TelaInicial.JogoSimples {
+public class navios extends BatalhaNaval {
 
     private static boolean primeiroNavioEscolhido = false;
     private static boolean segundoNavioEscolhido = false;

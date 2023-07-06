@@ -1,13 +1,11 @@
 package TelaInicial;
 
-import navios.navios;
 import navios.naviosH;
-import tabuleiro.tabuleiro;
-import tabuleiro.tabuleiroH;
+
 
 import java.util.Scanner;
 
-public class JogoSimples {
+public class BatalhaNaval {
     public static void main(String[] args) throws Throwable {
         Scanner scanner = new Scanner(System.in);
 
@@ -28,19 +26,17 @@ public class JogoSimples {
                     System.out.println("Escolha o Modo de Jogo Capitão: \n");
                     String confirmar;
                     do {
-                        System.out.print("Você quer jogar no modo Hardcore?? (Sim/Nao):");
+                        System.out.print("Você quer jogar?? (Sim/Nao):");
                         confirmar = scanner.nextLine().trim().toLowerCase();
                     } while (!confirmar.equals("sim") && !confirmar.equals("nao"));
 
                     if (confirmar.equals("sim")) {
-                        System.out.println("Entrando no modo hardcore...");
-                        tabuleiroH.exibirTabuleiroH();
+                        System.out.println("Entrando no jogo");
+
                         naviosH.exibirMenuH();
                         return; // Encerra o programa
                     } else {
-                        System.out.println("Continuando No jogo normal...");
-                        tabuleiro.exibirTabuleiroN();
-                        navios.exibirMenu();
+                        System.out.println("Saindo...");
                     }
                     return;
                 case 2:
